@@ -1,28 +1,64 @@
-# Carbon Trigger Browser Extension: Starter Code
+# Carbon Trigger - Browser Extension
 
-Using tmrow's C02 Signal API to track electricity usage, build a browser extension so that you can have a reminder right in your browser about how heavy your region's electricity usage is. Using this extension ad hoc will help you to make judgement calls on your activities based on this information.
+<div style="display: inline-block;">
+    <img src="external_resources\login.png" alt="Image 1" width="300" height="500" style="float: left; margin-right: 100px;">
+</div>
+<div style="display: inline-block;">
+    <img src="external_resources\data.png" alt="Image 2" width="300" height="500">
+</div>
 
-![extension screenshot](../browser_extension/extension-screenshot.png)
+## Overview
+Carbon Trigger is a lightweight browser extension designed to provide real-time carbon intensity data for electricity consumption in different regions. By utilizing the CO2 Signal API, this extension allows users to monitor carbon usage and fossil fuel percentage used in power generation for their selected region. The extension also visually represents the data with dynamic color changes, making it easier for users to assess the environmental impact of their energy consumption.
 
-## Getting Started
+## Features
+- Fetches real-time carbon intensity data from the [CO2 Signal API](https://www.co2signal.com/)
+- Displays carbon usage (grams of CO2 emitted per kilowatt-hour)
+- Shows fossil fuel percentage in the energy mix
+- Dynamically changes text colors based on carbon intensity levels
+- Stores user input (region and API key) for a personalized experience
+- Provides an easy reset option to change region settings
 
-You will need to have [npm](https://npmjs.com) installed. Download a copy of this code to a folder on your computer.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/HiT-T/Web-Carbon-Trigger.git
+   ```
+2. Open Chrome and navigate to `chrome://extensions/`.
+3. Enable "Developer mode" (toggle in the top-right corner).
+4. Click "Load unpacked" and select the project folder.
+5. The extension will now be installed and ready to use!
 
-Install all the required packages:
+## Usage
+1. Open the extension popup.
+2. Enter your region name and CO2 Signal API key.
+3. Click submit to fetch the latest carbon intensity data.
+4. The extension will display the region's carbon usage and fossil fuel percentage.
+5. Color-coded values help visualize environmental impact:
+   - Green (`#2AA364`): Low emissions
+   - Yellow (`#F5EB4D`): Moderate emissions
+   - Dark Red (`#9E4229`): High emissions
+   - Brown (`#381D02`): Very high emissions
+6. Click "Change Region" to update your settings.
 
-```
-npm install
-```
+## Technologies Used
+- **JavaScript**: Handles API requests and DOM manipulation.
+- **Axios**: Fetches data from the CO2 Signal API.
+- **Chrome Extension APIs**: Manages local storage and icon updates.
+- **HTML & CSS**: Structures and styles the user interface.
 
-Build the extension from webpack
+## Code Structure
+- `index.html`: Main UI layout
+- `index.js`: Handles form submissions, API calls, and UI updates
+- `styles.css`: Defines styles for the extension UI
+- `manifest.json`: Chrome extension configuration
 
-```
-npm run build
-```
+## API Key Requirement
+To use this extension, you need an API key from [CO2 Signal](https://www.co2signal.com/). Sign up for an account and retrieve your key from their developer portal.
 
-To install on Edge, use the 'three dot' menu on the top right corner of the browser to find the Extensions panel. From there, select 'Load Unpacked' to load a new extension. Open the 'dist' folder at the prompt and the extension will load. To use it, you will need an API key for CO2 Signal's API ([get one here via email](https://www.co2signal.com/) - enter your email in the box on this page) and the [code for your region](http://api.electricitymap.org/v3/zones) corresponding to the [Electricity Map](https://www.electricitymap.org/map) (in Boston, for example, I use 'US-NEISO').
+## Future Improvements
+- Add support for more energy-related APIs
+- Implement historical data tracking
+- Provide suggestions for reducing carbon footprint
 
-![installing](../browser_extension/install-on-edge.png)
-
-Once the API key and region is input into the extension interface, the colored dot in the browser extension bar should change to reflect your region's energy usage and give you a pointer on what energy-heavy activities would be appropriate for you to perform. The concept behind this 'dot' system was given to me by the [Energy Lollipop extension](https://energylollipop.com/) for California emissions.
-
+## License
+This project is open-source and available under the MIT License.
