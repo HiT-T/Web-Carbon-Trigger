@@ -25,8 +25,8 @@ Carbon Trigger is a lightweight browser extension designed to provide real-time 
    ```
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" (toggle in the top-right corner).
-4. Click "Load unpacked" and select the project folder.
-5. The extension will now be installed and ready to use!
+4. Click "Load unpacked" and select the dist folder.
+5. The extension will now be ready to use!
 
 ## Usage
 1. Open the extension popup.
