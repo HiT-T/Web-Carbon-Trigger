@@ -1,11 +1,11 @@
 # Carbon Trigger - Browser Extension
 
-<div style="display: inline-block;">
+<span style="display: inline-block;">
     <img src="external_resources\login.png" alt="Image 1" width="300" height="500" style="float: left; margin-right: 100px;">
-</div>
-<div style="display: inline-block;">
+</span>
+<span style="display: inline-block;">
     <img src="external_resources\data.png" alt="Image 2" width="300" height="500">
-</div>
+</span>
 
 ## Overview
 Carbon Trigger is a lightweight browser extension designed to provide real-time carbon intensity data for electricity consumption in different regions. By utilizing the CO2 Signal API, this extension allows users to monitor carbon usage and fossil fuel percentage used in power generation for their selected region. The extension also visually represents the data with dynamic color changes, making it easier for users to assess the environmental impact of their energy consumption.
