@@ -1,9 +1,6 @@
 # Carbon Trigger - Browser Extension
 
 <span style="display: inline-block;">
-    <img src="external_resources\login.png" alt="Image 1" width="300" height="500" style="float: left; margin-right: 100px;">
-</span>
-<span style="display: inline-block;">
     <img src="external_resources\data.png" alt="Image 2" width="300" height="500">
 </span>
 
