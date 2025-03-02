@@ -56,4 +56,4 @@ Carbon Trigger is a lightweight browser extension designed to provide real-time 
 To use this extension, you need an API key from [CO2 Signal](https://www.co2signal.com/). Sign up for an account and retrieve your key from their developer portal.
 
 ## License
-This project is open-source and available under the MIT License[License].
+This project is open-source and available under the MIT [License](License).
