@@ -54,3 +54,7 @@ To use this extension, you need an API key from [CO2 Signal](https://www.co2sign
 
 ## License
 This project is open-source and available under the MIT [License](License).
+
+## Acknowledgements
+- Developed following the Web-Dev-For-Beginners curriculum by Microsoft.
+- Special thanks to the open-source community for assets and resources.
